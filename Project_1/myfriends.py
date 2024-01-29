@@ -1,6 +1,6 @@
 
 """Assignment 1: Friend of a Friend
-# DID THIS WORK////////////
+
 
 Please complete these functions, to answer queries given a dataset of
 friendship relations, that meet the specifications of the handout
