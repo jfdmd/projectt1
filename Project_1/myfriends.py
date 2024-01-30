@@ -129,13 +129,14 @@ def find_all_number_of_friends(my_dir):
 
     # ------------ BEGIN YOUR CODE ------------
 
-    for k in my_dir:
-        my_key = k
-        my_length_of_value = str(len(my_dir[k]))
-        my_tuple = ( my_key, my_length_of_value)
+    for x in my_dir:
+        # my_key = k
+        # my_length_of_value = str(len(my_dir[k]))
+        # my_tuple = ( my_key, my_length_of_value)
+        # friends_list.append(my_tuple)
+        friends_list += [(x, len(my_dir[x]))]
 
-        friends_list.append(my_tuple)
-
+    friends_list = sorted(friends_list)
     friends_list.sort(key = lambda x: x[1], reverse = True)
 
     # ------------ END YOUR CODE ------------
@@ -226,42 +227,52 @@ def find_smallest_team(my_dir):
     # ------------ BEGIN YOUR CODE
 
 
-    for key in my_dir:
-        team_roster = make_team_roster(key, my_dir)         # call method make_team_roster
-        #print('st', team_roster)
+    # for key in my_dir:
+    #     team_roster = make_team_roster(key, my_dir)         # call method make_team_roster
+    #     #print('st', team_roster)
+    #
+    #     new_team_roster_string = team_roster.replace("_", ", ")   # replace "_" with , and a space
+    #    # print(new_team_roster_string)
+    #
+    #     string_to_tuple = tuple(map(str, new_team_roster_string.split(', ')))
+    #     #print(string_to_tuple)
+    #
+    #     length_of_string = len(string_to_tuple) -1         # length of the string minus the team leader
+    #     #print(length_of_string)
+    #
+    #     team_leader = string_to_tuple[0]
+    #     #print(team_leader)
+    #
+    #     leader_team_tuple = (team_leader, length_of_string)
+    #     #print(leader_team_tuple)
+    #
+    #     all_teams.append(leader_team_tuple)
+    #     #print(all_teams)
+    #
+    # all_teams.sort(key=lambda x: x[1])              # sort by team size in ascending order
+    #     #print(all_teams)
+    #
+    # smallest_team_size = all_teams[0][1]
+    # #print(smallest_team_size)
+    #
+    # # Compare team size with the smallest size and if it is equal in size then add to list
+    # for item in all_teams:
+    #     if item[1] == smallest_team_size:
+    #         smallest_teams.append(item)
+    # #print(smallest_teams)
+    # smallest_teams.sort(key=lambda x: x[1])
 
-        new_team_roster_string = team_roster.replace("_", ", ")   # replace "_" with , and a space
-       # print(new_team_roster_string)
+    for x in my_dir:
+        team = make_team_roster(x, my_dir)
+        teamLength = len(team.split("_"))
+        smallest_teams += [(team, teamLength)]
+    smallest_teams = sorted(smallest_teams)
+    smallest_teams.sort(key=lambda dirEntry: dirEntry[1])
+    for x in range(len(smallest_teams)):
+        smallest_teams[x] = smallest_teams[x][0]
+    # ------------ END YOUR CODE
 
-        string_to_tuple = tuple(map(str, new_team_roster_string.split(', ')))
-        #print(string_to_tuple)
-
-        length_of_string = len(string_to_tuple) -1         # length of the string minus the team leader
-        #print(length_of_string)
-
-        team_leader = string_to_tuple[0]
-        #print(team_leader)
-
-        leader_team_tuple = (team_leader, length_of_string)
-        #print(leader_team_tuple)
-
-        all_teams.append(leader_team_tuple)
-        #print(all_teams)
-
-    all_teams.sort(key=lambda x: x[1])              # sort by team size in ascending order
-        #print(all_teams)
-
-    smallest_team_size = all_teams[0][1]
-    #print(smallest_team_size)
-
-    # Compare team size with the smallest size and if it is equal in size then add to list
-    for item in all_teams:
-        if item[1] == smallest_team_size:
-            smallest_teams.append(item)
-    #print(smallest_teams)
-    smallest_teams.sort(key=lambda x: x[1])
-
-
+    return smallest_teams[0] if smallest_teams else ""
 
 
     
