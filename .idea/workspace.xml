@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bdb7804-931d-4d9b-ac30-cdabbaefb5c7" name="Changes" comment="CHANGE">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5bdb7804-931d-4d9b-ac30-cdabbaefb5c7" name="Changes" comment="CHANGE" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,10 +23,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/jfraz2/Dropbox/GitHub",
+    "last_opened_file_path": "C:/Users/jfraz2/Dropbox/GitHub/friends-jfdmd",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jfraz2\Dropbox\GitHub\friends-jfdmd" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="test_friends" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="DSA pythonProjects" />
@@ -133,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706623739357</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="CHANGE">
+      <created>1706724137491</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706724137491</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
